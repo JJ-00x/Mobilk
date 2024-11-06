@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0e21fc96fd6fed54789b8a92e0f3617e
+guid: ba1e4c4765c23004bb9114a2fbfbbeab
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 400
+  spritePixelsToUnits: 700
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,70 +108,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Anim_Rabbit_Jumping_Forward_02_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1040
-        width: 520
-        height: 520
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a05fe16d74c245548bc9309bce9fe979
-      internalID: -1794577271
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anim_Rabbit_Jumping_Forward_02_1
-      rect:
-        serializedVersion: 2
-        x: 520
-        y: 1040
-        width: 520
-        height: 520
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df3a8552828b1a44f9d9ff715990e7f9
-      internalID: -1464827985
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Anim_Rabbit_Jumping_Forward_02_2
-      rect:
-        serializedVersion: 2
-        x: 520
-        y: 520
-        width: 520
-        height: 520
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e5e56f2ccfe2823499666a5b3a0ed5ca
-      internalID: -700400308
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -182,10 +119,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Anim_Rabbit_Jumping_Forward_02_0: -1794577271
-      Anim_Rabbit_Jumping_Forward_02_1: -1464827985
-      Anim_Rabbit_Jumping_Forward_02_2: -700400308
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
