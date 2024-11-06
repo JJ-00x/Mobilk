@@ -278,7 +278,7 @@ MonoBehaviour:
       Data4: 1107095183
     Path: event:/ButtonClick
   Event: 
-  EventPlayTrigger: 15
+  EventPlayTrigger: 19
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -1444,6 +1444,7 @@ GameObject:
   - component: {fileID: 743029912}
   - component: {fileID: 743029911}
   - component: {fileID: 743029910}
+  - component: {fileID: 743029913}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -1577,6 +1578,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743029908}
   m_CullTransparentMesh: 1
+--- !u!114 &743029913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743029908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 387564519
+      Data2: 1167544287
+      Data3: -1692075875
+      Data4: 1107095183
+    Path: event:/ButtonClick
+  Event: 
+  EventPlayTrigger: 19
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &866877966
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,7 +2014,6 @@ GameObject:
   - component: {fileID: 1053393450}
   - component: {fileID: 1053393452}
   - component: {fileID: 1053393451}
-  - component: {fileID: 1053393453}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -2106,37 +2137,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053393449}
   m_CullTransparentMesh: 1
---- !u!114 &1053393453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053393449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 387564519
-      Data2: 1167544287
-      Data3: -1692075875
-      Data4: 1107095183
-    Path: event:/ButtonClick
-  Event: 
-  EventPlayTrigger: 15
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1072344547
 GameObject:
   m_ObjectHideFlags: 0
@@ -2681,7 +2681,7 @@ MonoBehaviour:
       Data4: 1107095183
     Path: event:/ButtonClick
   Event: 
-  EventPlayTrigger: 15
+  EventPlayTrigger: 19
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
