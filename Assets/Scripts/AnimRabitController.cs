@@ -1,16 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
 
 public class AnimRabitController : MonoBehaviour
 {
-    public Animator animator; // Animator do zmiany animacji
-    public float inactivityThreshold = 0.5f; // Czas bezdotykowy, po którym animacja przełącza się na false
+    public Animator animator; // Animator do zmiany animacji (opcjonalne)
+    public SpriteRenderer rabbitSpriteRenderer; // Renderer sprite'a królika
+    public Sprite originalSprite; // Oryginalny sprite królika
+    public Sprite clickedSprite; // Sprite królika po kliknięciu
+    public float inactivityThreshold = 0.5f; // Czas bezdotykowy
     public float clickRadius = 1.0f; // Promień kliknięcia
-    public Transform targetPosition; // Miejsce, które należy kliknąć, by zmienić animację
+    public Transform targetPosition; // Miejsce, które należy kliknąć
 
-    private float inactivityTimer; // Timer do śledzenia czasu bezdotykowego
+    private bool isClicked = false; // Flaga, aby sprawdzić, czy królik został kliknięty
+
+    private void Start()
+    {
+        rabbitSpriteRenderer.sprite = originalSprite; // Ustawiamy początkowy sprite
+    }
 
     private void Update()
     {
@@ -20,7 +27,6 @@ public class AnimRabitController : MonoBehaviour
 
     private void DetectTouch()
     {
-        // Sprawdzamy dotyk na ekranie
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
@@ -28,11 +34,15 @@ public class AnimRabitController : MonoBehaviour
             {
                 Vector2 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
 
-                // Sprawdzamy, czy dotyk jest w obrębie promienia
+                // Sprawdzamy, czy dotyk jest w obrębie promienia kliknięcia
                 if (Vector2.Distance(touchPosition, targetPosition.position) <= clickRadius)
                 {
-                    animator.SetBool("onClick", true); // Ustawiamy na true, gdy dotyk jest wykryty
-                    inactivityTimer = 0f; // Resetuj timer bezdotykowy
+                    rabbitSpriteRenderer.sprite = clickedSprite; // Ustawiamy sprite na clickedSprite
+                    animator.SetBool("onClick", true); // Ustawiamy animację, jeśli jest potrzebna
+                    isClicked = true; // Zapisujemy stan kliknięcia
+
+                    // Odtwarzanie dźwięku przy każdym kliknięciu
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/KociolClick"); // Ścieżka do dźwięku
                 }
             }
         }
@@ -40,16 +50,12 @@ public class AnimRabitController : MonoBehaviour
 
     private void HandleInactivity()
     {
-        // Jeżeli nie ma aktywnego dotyku
-        if (Input.touchCount == 0)
-        {
-            inactivityTimer += Time.deltaTime; // Zwiększaj timer bezdotykowy
+        if (isClicked) return; // Jeśli kliknięto królika, nie resetujemy
 
-            // Jeżeli czas bezdotykowy przekroczył próg, zmień animację
-            if (inactivityTimer >= inactivityThreshold)
-            {
-                animator.SetBool("onClick", false); // Ustawiamy na false po czasie bezdotykowym
-            }
+        // Jeżeli nie ma aktywnego dotyku i królik nie był kliknięty, resetuj animację
+        if (Input.touchCount == 0 && animator.GetBool("onClick"))
+        {
+            animator.SetBool("onClick", false); // Ustawiamy na false po czasie bezdotykowym
         }
     }
 }
