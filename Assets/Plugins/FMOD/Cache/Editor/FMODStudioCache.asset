@@ -15,11 +15,42 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
+<<<<<<< HEAD
   lastModified: 638664342368344149
+=======
+  lastModified: 638664339645297443
+>>>>>>> origin/main
   FileSizes:
   - Name: Desktop
     Value: 2733248
   Exists: 1
+--- !u!114 &-6313275470140018117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Win
+  m_EditorClassIdentifier: 
+  Path: event:/Win
+  Guid:
+    Data1: -1221262085
+    Data2: 1216639289
+    Data3: -1521455193
+    Data4: -1397898167
+  Banks:
+  - {fileID: -7164949880744708830}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-5936345181123965322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,17 +151,29 @@ MonoBehaviour:
   - {fileID: 779737568259724924}
   - {fileID: -2505357227808816217}
   - {fileID: -5936345181123965322}
+<<<<<<< HEAD
   - {fileID: -4961094008073246582}
   - {fileID: 5538647576292244308}
   - {fileID: 3281518506635275757}
   - {fileID: 8061417423431364566}
   - {fileID: 8549823165443166305}
+=======
+  - {fileID: 1960235026467751552}
+  - {fileID: 2124971399921435125}
+  - {fileID: 5714636583833671249}
+  - {fileID: 4385446765024149997}
+  - {fileID: -6313275470140018117}
+>>>>>>> origin/main
   EditorParameters: []
   MasterBanks:
   - {fileID: -7164949880744708830}
   StringsBanks:
   - {fileID: 4011530421390794277}
+<<<<<<< HEAD
   cacheTime: 638664342368446085
+=======
+  cacheTime: 638664339645312452
+>>>>>>> origin/main
   cacheVersion: 131843
 --- !u!114 &779737568259724924
 MonoBehaviour:
@@ -159,7 +202,11 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+<<<<<<< HEAD
 --- !u!114 &3281518506635275757
+=======
+--- !u!114 &1960235026467751552
+>>>>>>> origin/main
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -169,6 +216,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
   m_Name: event:/Lose
   m_EditorClassIdentifier: 
   Path: event:/Lose
@@ -177,6 +225,16 @@ MonoBehaviour:
     Data2: 1157006830
     Data3: -1113690698
     Data4: -1532006573
+=======
+  m_Name: event:/KociolClick
+  m_EditorClassIdentifier: 
+  Path: event:/KociolClick
+  Guid:
+    Data1: -1983514080
+    Data2: 1077070268
+    Data3: 647754926
+    Data4: -778651537
+>>>>>>> origin/main
   Banks:
   - {fileID: -7164949880744708830}
   IsStream: 0
@@ -186,6 +244,36 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+<<<<<<< HEAD
+=======
+--- !u!114 &2124971399921435125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cooking
+  m_EditorClassIdentifier: 
+  Path: event:/Cooking
+  Guid:
+    Data1: -1211214522
+    Data2: 1205038251
+    Data3: 1716425919
+    Data4: 1085326152
+  Banks:
+  - {fileID: -7164949880744708830}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 27692
+>>>>>>> origin/main
 --- !u!114 &4011530421390794277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,11 +289,16 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+<<<<<<< HEAD
   lastModified: 638664342368446085
+=======
+  lastModified: 638664339645312452
+>>>>>>> origin/main
   FileSizes:
   - Name: Desktop
     Value: 1228
   Exists: 1
+<<<<<<< HEAD
 --- !u!114 &5538647576292244308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,6 +327,9 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 27692
 --- !u!114 &8061417423431364566
+=======
+--- !u!114 &4385446765024149997
+>>>>>>> origin/main
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -260,7 +356,11 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+<<<<<<< HEAD
 --- !u!114 &8549823165443166305
+=======
+--- !u!114 &5714636583833671249
+>>>>>>> origin/main
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -270,6 +370,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
   m_Name: event:/Win
   m_EditorClassIdentifier: 
   Path: event:/Win
@@ -278,6 +379,16 @@ MonoBehaviour:
     Data2: 1216639289
     Data3: -1521455193
     Data4: -1397898167
+=======
+  m_Name: event:/Lose
+  m_EditorClassIdentifier: 
+  Path: event:/Lose
+  Guid:
+    Data1: 2132894293
+    Data2: 1157006830
+    Data3: -1113690698
+    Data4: -1532006573
+>>>>>>> origin/main
   Banks:
   - {fileID: -7164949880744708830}
   IsStream: 0
