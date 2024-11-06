@@ -589,6 +589,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 537086419}
+  rabbitSpriteRenderer: {fileID: 537086417}
+  originalSprite: {fileID: -1476976257, guid: 004651a41499cd44381a91bd76fbc27a, type: 3}
+  clickedSprite: {fileID: 1862592885, guid: 6099571631be4ac4d924853b93835200, type: 3}
   inactivityThreshold: 0.5
   clickRadius: 1
   targetPosition: {fileID: 1435093689}
