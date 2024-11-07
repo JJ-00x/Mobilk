@@ -1,0 +1,5 @@
+/Users/kuba/Mobilk/.utmp/RelWithDebInfo/5y4h2025/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/kuba/Mobilk/.utmp/RelWithDebInfo/5y4h2025/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/Users/kuba/Mobilk/.utmp/RelWithDebInfo/5y4h2025/armeabi-v7a/FramePacing/CMakeFiles/swappywrapper.dir
+/Users/kuba/Mobilk/.utmp/RelWithDebInfo/5y4h2025/armeabi-v7a/FramePacing/CMakeFiles/edit_cache.dir
+/Users/kuba/Mobilk/.utmp/RelWithDebInfo/5y4h2025/armeabi-v7a/FramePacing/CMakeFiles/rebuild_cache.dir
